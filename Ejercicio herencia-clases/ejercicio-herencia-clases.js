@@ -14,4 +14,4 @@ class Developer extends Person {
 }
 
 const developer = new Developer("Mario", "Rossi", "Front-end");
-console.log(developer.firstName + " " + developer.lastName + " " + developer.role);
+console.log(developer.firstName + " " + developer.lastName + " " + developer.role + "");
