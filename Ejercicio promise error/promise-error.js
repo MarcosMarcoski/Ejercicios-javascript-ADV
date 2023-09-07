@@ -1,6 +1,6 @@
 const isLogged = true;
 
-function miPromesa(isLogged) {
+function mipromesa(isLogged) {
   return new Promise((resolve, reject) => {
     let rand = Math.random();
     if (isLogged) {
@@ -21,7 +21,8 @@ function miSegundaPromesa(randNumber) {
   });
 }
 
-miPromesa()
+mipromesa(3)
     .then(miSegundaPromesa)
     .then((val)=> console.log(val))
     .catch((err)=> console.error(err))
+    .finally(()=> console.log("finally"))
