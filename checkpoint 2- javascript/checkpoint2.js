@@ -11,14 +11,11 @@ const getimages = async () => {
     data.forEach((gato) => {
       const { url } = gato;
       imagenes.push(url);
-      
     });
-    return imagenes
+    return imagenes;
   } catch (error) {
     console.log("Esto da error ", error);
   }
 };
 
 getimages();
-
-
